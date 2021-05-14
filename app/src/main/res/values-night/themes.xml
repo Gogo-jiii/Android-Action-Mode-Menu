@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ActionModeContextMenu" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:textColorPrimary">@color/white</item>
+
+        <!--Required for the context menu to overlap the toolbar-->
+        <item name="windowActionModeOverlay">true</item>
+
+        <!--        option menu color-->
+        <item name="actionMenuTextColor">@color/white</item>
+
+        <!--        option menu dot icon color-->
+        <item name="android:textColorSecondary">@color/white</item>
+
+        <!--        actionmode-->
+        <item name="actionModeBackground">@color/purple_500</item>
+
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.DayNight.ActionBar">
+        <!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <!-- Tints the input fields like checkboxes and text fields -->
+        <item name="colorAccent">@color/white</item>
+        <!-- Applies to views in their normal state. -->
+        <item name="colorControlNormal">@color/white</item>
+        <!-- Applies to views in their activated state (i.e checked or switches) -->
+        <item name="colorControlActivated">@color/white</item>
+        <!-- Applied to framework control highlights (i.e ripples or list selectors) -->
+        <item name="colorControlHighlight">@color/white</item>
+
+        <!-- Enable these below if you want clicking icons to trigger a ripple effect -->
+        <!--
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+        -->
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
